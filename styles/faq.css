@@ -50,3 +50,29 @@ a:hover{
         width: 60px;
         aspect-ratio: 1;
     }
+    .footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--secondary-extra-light-orange);
+}
+
+.footer_container{
+    padding: 40px 0;
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.footer_container div:first-child span{
+    font-size:  40px;
+    color: var(--primary-light-orange);
+}
+.footer_container div:last-child a{
+    font-size: 30px;
+    color: var(--mixed-secondary-blue);
+    font-weight: var(--font-weight3);
+}

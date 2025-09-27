@@ -1,0 +1,14 @@
+:root{
+    --secondary-extra-light-orange: #FFE6C7;
+    --primary-light-orange: #FFA559;
+    --primary-orange: #FF6000;
+    --primary-black: #000000;
+    --secondary-black: #1A1C20;
+    --mixed-secondary-blue: #222831;
+    --poppins: "Poppins", sans-serif;
+    --hand-writing-elegant-font: ;
+    --default-font-size: 18px;
+    --font-weight1: 700;
+    --font-weight2: 600;
+    --font-weight3: 500;
+}

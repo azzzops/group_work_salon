@@ -1,0 +1,79 @@
+:root{
+    --secondary-extra-light-orange: #FFE6C7;
+    --primary-light-orange: #FFA559;
+    --primary-orange: #FF6000;
+    --primary-black: #000000;
+    --secondary-black: #1A1C20;
+    --mixed-secondary-blue: #222831;
+    --poppins: "Poppins", sans-serif;
+    --hand-writing-elegant-font: ;
+    --default-font-size: 18px;
+    --font-weight1: 700;
+    --font-weight2: 600;
+    --font-weight3: 500;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--poppins);
+}
+body{
+    position: relative;
+}
+.navigation_bar{
+    top: 0;
+    position: relative;
+}
+a{
+    font-family: var(--poppins);
+    font-weight: var(--font-weight3);
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: var(--default-font-size);
+}
+a:hover{
+    color: var(--primary-light-orange);
+}
+.nav_container{
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links{
+    display: flex;
+    gap: 50px;
+}
+.logo img{
+        width: 60px;
+        aspect-ratio: 1;
+    }
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--secondary-extra-light-orange);
+}
+
+.footer_container{
+    padding: 40px 0;
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.footer_container div:first-child span{
+    font-size:  40px;
+    color: var(--primary-light-orange);
+}
+.footer_container div:last-child a{
+    font-size: 30px;
+    color: var(--mixed-secondary-blue);
+    font-weight: var(--font-weight3);
+}

@@ -130,3 +130,24 @@ a:hover{
     color: var(--mixed-secondary-blue);
     font-weight: var(--font-weight3);
 }
+@media screen and (max-width:768px) {
+    nav_container{
+        width: 100%;
+        margin: 0px;
+    }
+    .links{
+    gap: 10px;
+    }
+    #faq-container{
+        width: 100%;
+    }
+    /* a{
+    font-family: var(--poppins);
+    font-weight: var(--font-weight3);
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 10px
+} */
+    
+}

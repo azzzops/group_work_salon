@@ -120,6 +120,7 @@ header {
 }
 .cover {
   display: flex;
+  justify-content: center;
   overflow-x: auto;
   gap: 20px;
   padding: 20px;

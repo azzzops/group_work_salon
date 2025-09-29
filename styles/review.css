@@ -21,7 +21,7 @@
 body {
   position: relative;
 }
-.navigation_bar {
+/* .navigation_bar {
   top: 0;
   position: relative;
 }
@@ -49,7 +49,7 @@ a:hover {
 .logo img {
   width: 60px;
   aspect-ratio: 1;
-}
+} */
 
 .footer {
   position: absolute;

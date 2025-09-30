@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+body,
+input,
+textarea,
+a {
+  font-family: "Roboto", sans-serif;
+}
+.navigation_bar {
+  top: 0;
+  position: relative;
+}
+a {
+  font-family: var(--poppins);
+  font-weight: var(--font-weight3);
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: var(--default-font-size);
+}
+a:hover {
+  color: var(--primary-light-orange);
+}
+.nav_container {
+  margin: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links {
+  display: flex;
+  gap: 50px;
+}
+.logo img {
+  width: 60px;
+  aspect-ratio: 1;
+}
+
+.container {
+  width: 100%;
+  padding: 30px;
+  padding-top: 10px;
+  margin-bottom: 100px;
+  color: #222831;
+}
+.form-wrap {
+  position: relative;
+  width: 1100px;
+  margin: auto;
+  margin-top: 35px;
+  border-radius: 30px;
+  color: #222831;
+}
+.form-title {
+  text-align: left;
+  margin-left: 23px;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+.container1 {
+  width: 35%;
+  height: 551px;
+  padding: 40px;
+  margin-top: 35px;
+  float: left;
+  display: block;
+  border-radius: 30px 0px 0px 30px;
+  color: black;
+}
+.info-title {
+  text-align: left;
+  font-size: 21px;
+  letter-spacing: 0.7px;
+}
+.info-sub-title {
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 17px;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+}
+.info-details {
+  list-style: none;
+  margin: 60px 0px;
+}
+.info-details li {
+  margin-top: 5px;
+  font-size: 18px;
+  color: black;
+}
+.info-details li i {
+  background: #ff6000;
+  padding: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.info-details li a {
+  color: black;
+  text-decoration: none;
+}
+.info-details li a:hover {
+  color: #ff6000;
+}
+.social-icons li {
+  display: inline-block;
+}
+.social-icons {
+  list-style: none;
+  text-align: center;
+  margin: 20px 0px;
+}
+.social-icons li i {
+  background: #ff6000;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 22%;
+  margin: 0px 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.social-icons li i:hover {
+  background: #fff;
+  color: #000;
+}
+.form-wrap {
+  width: 65%;
+  float: right;
+  margin-bottom: 1000px 1000px;
+  padding: 40px 24px 35px 25px;
+  border-radius: 0px 30px 30px 0px;
+  color: #222831;
+  background: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15),
+    -2px -2px 10px rgba(0, 0, 0, 0.05);
+}
+.form-fields {
+  display: table;
+  width: 100%;
+  padding: 15px 5px 5px 5px;
+}
+.fname {
+  border: 1px solid black;
+}
+.iname {
+  border: 1px solid black;
+}
+.email {
+  border: 1px solid black;
+}
+.phone {
+  border: 1px solid black;
+}
+.form-fields input,
+.form-fields textarea {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  padding: 20px 10px 20px 5px;
+  width: 100%;
+}
+.form-fields textarea {
+  height: 150px;
+  resize: none;
+}
+.form-fields .form-group:last-child {
+  width: 96%;
+}
+.BTN {
+  width: 70%;
+  height: 45px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  background-color: #ff6000;
+}
+.BTN:hover {
+  background: darkblue;
+}
+.btn {
+  width: 50%;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  background-color: #ff6000;
+}
+.menu {
+}
+/* Responsive css */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .container1,
+  .form-wrap {
+    width: 100%;
+    height: inherit;
+    float: none;
+  }
+  .container1 {
+    border-radius: 30px 30px 0px 0px;
+  }
+  .form-wrap {
+    border-radius: 0px 0px 30px 30px;
+  }
+  .form-group {
+    width: 100%;
+    float: none;
+    margin: 25px 0px;
+  }
+  .form-fields .form-group:last-child,
+  .BTN {
+    width: 96%;
+    height: 68px;
+    margin: 0px 12px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    background: #ff6000;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    transition: 0.5s;
+  }
+  .BTN:hover {
+    background: darkblue;
+  }
+  .form-wrap {
+    width: 100%;
+    height: 1000px;
+  }
+}

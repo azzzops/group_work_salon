@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root{
     --secondary-extra-light-orange: #FFE6C7;
     --primary-light-orange: #FFA559;
@@ -33,7 +38,7 @@ a{
     color: black;
     font-size: var(--default-font-size);
 }
-a:hover, .links li a:hover{
+a:hover{
     color: var(--primary-light-orange);
 }
 .nav_container{
@@ -42,40 +47,69 @@ a:hover, .links li a:hover{
     justify-content: space-between;
     align-items: center;
 }
-
 .links{
     display: flex;
-    gap: 1em;
-    list-style: none;
-    white-space: nowrap;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding-top: 30px;
 }
-
-.links li a{
-    padding: 8px 20px;
-    border-radius: 30px;
-    display: block;
-    text-decoration: none;
-    font-size: 16px;
-    transition: all .2s ease-in-out;
-    color: rgb(40, 39, 39);
-}
-
-.toggle_menu{
-    display: none;
-    background-color: transparent;
-    padding: 0;
-    border: 0;
-    cursor: pointer;
-    
-}
-.logo img{
+.links img{
         width: 60px;
+        padding-bottom: 5px;
         aspect-ratio: 1;
     }
 
+#faq-container{
+    width: 60%;
+    height: 800px;
+    background-color: white;
+    margin: 0 auto;
+}
+.faq-text{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.faq-question h2{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+
+}
+.faq-question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.faq:hover .faq-answer{
+    display: block;
+   
+}
+
+.faq-answer{
+    font-size: 15px;
+    color: grey;
+    margin-top: 12px;
+    display: none;
+}
+
+.faq{
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px pink;
+
+}
+.icon{
+    color: orangered;
+}
+
 .footer{
-    margin-top: 100px;
-    position: relative;
+    position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
@@ -90,7 +124,6 @@ a:hover, .links li a:hover{
     align-items: center;
    
 }
-
 .footer_container div:first-child span{
     font-size:  40px;
     color: var(--primary-light-orange);
@@ -99,4 +132,28 @@ a:hover, .links li a:hover{
     font-size: 30px;
     color: var(--mixed-secondary-blue);
     font-weight: var(--font-weight3);
+}
+@media screen and (max-width:768px) {
+    nav_container{
+        width: 100%;
+        margin: 0px 20px;
+        
+    }
+    .links{
+    /* gap: 10px; */
+    /* flex-direction: row; */
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    }
+    #faq-container{
+        width: 100%;
+        height: 950px;
+    }
+    .logo img{
+        width: 50px;
+        margin-bottom: 10px;
+    }
+    
+    
 }

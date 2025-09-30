@@ -1,0 +1,152 @@
+:root {
+  --secondary-extra-light-orange: #ffe6c7;
+  --primary-light-orange: #ffa559;
+  --primary-orange: #ff6000;
+  --primary-black: #000000;
+  --secondary-black: #1a1c20;
+  --mixed-secondary-blue: #222831;
+  --poppins: "Poppins", sans-serif;
+  --hand-writing-elegant-font: ;
+  --default-font-size: 18px;
+  --font-weight1: 700;
+  --font-weight2: 600;
+  --font-weight3: 500;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--poppins);
+}
+body {
+  position: relative;
+}
+.navigation_bar {
+  top: 0;
+  position: relative;
+}
+a {
+  font-family: var(--poppins);
+  font-weight: var(--font-weight3);
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: var(--default-font-size);
+}
+a:hover {
+  color: var(--primary-light-orange);
+}
+.nav_container {
+  margin: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links {
+  display: flex;
+  gap: 50px;
+}
+.logo img {
+  width: 60px;
+  aspect-ratio: 1;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--secondary-extra-light-orange);
+}
+
+.footer_container {
+  padding: 40px 0;
+  margin: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_container div:first-child span {
+  font-size: 40px;
+  color: var(--primary-light-orange);
+}
+.footer_container div:last-child a {
+  font-size: 30px;
+  color: var(--mixed-secondary-blue);
+  font-weight: var(--font-weight3);
+}
+.process-main-image {
+  width: 100%;
+  border-radius: 50px;
+  height: 500px;
+  padding: 20px;
+}
+.section-number {
+  background-color: #ff6000;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 100%;
+  padding: 5px;
+}
+.top-sections {
+  padding: 40px;
+}
+.sections-container {
+  display: flex;
+  gap: 35px;
+  /* flex-wrap: nowrap; */
+}
+.first-paragraph {
+  padding-left: 12px;
+  padding-bottom: 10px;
+}
+.second-paragraph {
+  font-size: xx-large;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+.section-description {
+  color: dimgray;
+}
+.fist-page-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.second-section {
+  max-width: 500px;
+}
+body {
+  align-content: center;
+}
+.second-team-paragraph {
+  text-align: center;
+  font-size: xx-large;
+}
+.fisrt-team-paragraph {
+  text-align: center;
+}
+.team-images {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+}
+.team-images-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+.team-section {
+  margin-top: 80px;
+}
+.image-container{
+    position: relative;
+}
+.fa-instagram{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
